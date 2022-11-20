@@ -59,7 +59,6 @@ function Form(props) {
 
           <div>
             <label class="sr-only" for="subject"> Subject </label>
-            <text
           </div>
 
           <div>
