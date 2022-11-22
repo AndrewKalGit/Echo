@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 function Contact(props) {
     return (
@@ -71,10 +72,9 @@ function Contact(props) {
           <div class="mt-4">
             <button
               type="submit"
-              class="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-5 py-3 text-white sm:w-auto"
+              class="inline-flex w-full items-center justify-center bg-blue-600 px-5 py-3 text-white sm:w-auto"
             >
               <span class="font-medium"> Send Inquiry </span>
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="ml-3 h-5 w-5"
@@ -90,6 +90,15 @@ function Contact(props) {
                 />
               </svg>
             </button>
+            <div class="">
+             <HashLink
+          class="inline-flex w-full items-center justify-center bg-blue-600 px-5 py-3 text-white sm:w-auto mt-4 font-medium"
+          href="/about"
+          smooth to="/#learn"
+        >
+          Learn more ⌃
+        </HashLink> 
+        </div>
           </div>
         </form>
       </div>
