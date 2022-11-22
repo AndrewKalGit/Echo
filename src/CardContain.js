@@ -5,7 +5,7 @@ import Cards from './Cards';
 function CardContain(props) {
     return (
         <div>
-<h1 class="bg-gray-900 text-2xl font-bold text-white text-center h-10">
+<h1 class="bg-gray-900 text-2xl font-bold text-white text-center h-20">
 Meet The Team 
 </h1>
 <section id="learn" class="bg-gray-900">

@@ -1,10 +1,11 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Services(props) {
     return (
 <section id="learn" class="bg-gray-900">
-  <div class="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-screen-2xl px-4 py-4 sm:px-6 lg:px-8">
     <div
       class="lg:items-stretch"
     >
@@ -18,25 +19,27 @@ function Services(props) {
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-4 lg:col-span-2 lg:grid-cols-4 lg:py-12 mb-32">
+      <div class="grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-4 lg:py-12 mb-32">
         <div>
-          <img
+          <LazyLoadImage
             id="img1"
-            alt="Simple"
-            src="https://i.imgur.com/GOM2fZx.jpg"
+            alt="UX"
+            src="https://i.imgur.com/Q1A4Dko.jpg"
+            placeholderSrc='https://i.imgur.com/SI5paqA.jpg'
             class="aspect-square w-full rounded object-cover"
           />
 
           <div class="mt-2">
-            <h3 class="font-medium text-white">Usability Testing</h3>
+            <h3 class="font-medium text-white">User Experience Research</h3>
           </div>
         </div>
 
          <div>
-          <img
-          id="img2"
-            alt="Simple"
+            <LazyLoadImage
+            id="img1"
+            alt="UI"
             src="https://i.imgur.com/y7nQD9W.jpg"
+            placeholderSrc='https://i.imgur.com/jvhyOuF.jpg'
             class="aspect-square w-full rounded object-cover"
           />
 
@@ -46,10 +49,11 @@ function Services(props) {
         </div>
        
          <div>
-          <img
-          id="img3"
-            alt="Simple"
+             <LazyLoadImage
+            id="img1"
+            alt="Development"
             src="https://i.imgur.com/5jlTYEQ.jpg"
+            placeholderSrc='https://i.imgur.com/T36u2JB.jpg'
             class="aspect-square w-full rounded object-cover"
           />
 
@@ -58,10 +62,11 @@ function Services(props) {
           </div>
         </div>
          <div>
-          <img
-          id="img4"
-            alt="Simple"
+             <LazyLoadImage
+            id="img1"
+            alt="API services"
             src="https://i.imgur.com/H5Vmerd.jpg"
+            placeholderSrc='https://i.imgur.com/TrcyZjB.jpg'
             class="aspect-square w-full rounded object-cover"
           />
 
