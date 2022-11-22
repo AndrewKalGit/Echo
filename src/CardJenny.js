@@ -18,7 +18,7 @@ function CardJenny(props) {
       <div
         class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
       >
-        <p class="text-sm text-white text-center text-xs sm:text-right">
+        <p class="sm:text-sm text-white text-center text-xs sm:text-right">
             Even when there's flaws it's ok to accept them, nobody's perfect.
             I turn your work into something that closely reflects your organization.
         </p>  
