@@ -20,10 +20,8 @@ function Cards(props) {
       <div
         class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
       >
-        <p class="text-sm text-white text-left">
-            &emsp; I've always found small organizaitons essential to the growth and health of communities. 
-          <br/>
-            By offering a digital solution to other small organizations, I find a sense of duty operating this business.
+        <p class="text-xs sm:text-sm text-white text-center">
+            I've always found small organizaitons essential to the growth and health of communities. By offering a digital solution to other small organizations, I find a sense of duty operating this business.
         </p>  
       </div>
 
