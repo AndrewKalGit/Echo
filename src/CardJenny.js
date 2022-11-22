@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 function CardJenny(props) {
     return (
@@ -25,7 +26,9 @@ function CardJenny(props) {
       </div>
 
     </div>
+
   </div>
+
 </div>
     );
 }

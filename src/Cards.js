@@ -2,7 +2,7 @@ import React from 'react';
 
 function Cards(props) {
     return (
-<div id="1" class="group relative block bg-gray-900">
+<div id="team" class="group relative block bg-gray-900">
   <img
     alt="Developer"
     src="https://i.imgur.com/kDHwVPO.png"
