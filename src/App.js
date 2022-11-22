@@ -1,14 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import Banner from './Banner';
-import Form from './Form';
+import Contact from './Contact';
+import { BrowserRouter } from 'react-router-dom' 
+import Cards from './Cards';
+import CardJenny from './CardJenny';
 
 function App() {
   return (
-    <div>
+    <>
+    <BrowserRouter>
       <Banner/>
-      <Form/>
-    </div>
+       <Cards/>
+       <CardJenny/>
+      <Contact/>
+    </BrowserRouter>
+    </>
   );
 }
 

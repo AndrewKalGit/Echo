@@ -1,25 +1,20 @@
 import React from 'react';
 
-function Form(props) {
+function Contact(props) {
     return (
-<section class="bg-gray-100">
+<section id="contact" class="bg-gray-100">
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
       <div class="lg:col-span-2 lg:py-12">
-        <p class="max-w-xl text-lg">
-          At the same time, the fact that we are wholly owned and totally
-          independent from manufacturer and other group control gives you
-          confidence that we will only recommend what is right for you.
+        <h1 class="-mt-9 text-center sm:text-left sm:mt-0 max-w-xl text-2xl mb-2 font-semibold text-blue-600"> Get in touch </h1>
+        <p class="max-w-xl text-lg text-center sm:text-left">
+          Think our service is a match? Get in touch and let's integrate the best digital solution for your organization.  
         </p>
 
         <div class="mt-8">
-          <a href="" class="text-2xl font-bold text-blue-600">
-            732 515 8724
+          <a href="tel:+17325158724" class="text-2xl font-bold text-blue-600">
+            (732) 515 8724
           </a>
-
-          <address class="mt-2 not-italic">
-            282 Kevin Brook, Imogeneborough, CA 58517
-          </address>
         </div>
       </div>
 
@@ -49,6 +44,8 @@ function Form(props) {
             <div>
               <label class="sr-only" for="phone">Phone</label>
               <input
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}|[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
                 class="w-full rounded-lg border-gray-200 p-3 text-sm"
                 placeholder="Phone Number"
                 type="tel"
@@ -102,4 +99,4 @@ function Form(props) {
     );
 }
 
-export default Form;
+export default Contact;
