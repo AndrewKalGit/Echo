@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Cards from './Cards';
 import CardJenny from './CardJenny';
 import Services from './Services';
+import CardContain from './CardContain';
 
 function App() {
   return (
@@ -12,8 +13,7 @@ function App() {
     <BrowserRouter>
       <Banner/>
       <Services/>
-       <Cards/>
-       <CardJenny/>
+      <CardContain/>
       <Contact/>
     </BrowserRouter>
     </>

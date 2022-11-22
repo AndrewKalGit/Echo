@@ -90,15 +90,6 @@ function Contact(props) {
                 />
               </svg>
             </button>
-            <div class="">
-             <HashLink
-          class="inline-flex w-full items-center justify-center bg-blue-600 px-5 py-3 text-white sm:w-auto mt-4 font-medium"
-          href="/about"
-          smooth to="/#learn"
-        >
-          Learn more ⌃
-        </HashLink> 
-        </div>
           </div>
         </form>
       </div>

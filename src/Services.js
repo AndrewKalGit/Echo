@@ -4,21 +4,21 @@ import { HashLink } from 'react-router-hash-link';
 function Services(props) {
     return (
 <section id="learn" class="bg-gray-900">
-  <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
     <div
-      class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:items-stretch"
+      class="lg:items-stretch"
     >
-      <div class="flex items-center rounded bg-gray-100 p-8">
+      <div class="flex items-center rounded bg-gray-900 p-8">
         <div class="mx-auto text-center lg:text-left">
-          <h2 class="text-2xl font-bold">Services</h2>
+          <h2 class="text-2xl font-bold text-white text-center">Services</h2>
 
-          <p class="mt-4 max-w-[45ch] text-sm text-gray-700">
+          <p class="mt-4 max-w-[45ch] text-sm text-gray-100 text-center">
             We provide excellent services ranging from a simple and clean designed website, to integrating great 3rd party softwares for your websites. 
           </p>
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-4 lg:col-span-2 lg:grid-cols-4 lg:py-12">
+      <div class="grid grid-cols-2 gap-4 lg:col-span-2 lg:grid-cols-4 lg:py-12 mb-32">
         <div>
           <img
             id="img1"
@@ -70,20 +70,6 @@ function Services(props) {
           </div>
         </div>
       </div>
-      <HashLink
-          class="block w-full rounded border border-gray-100 px-12 py-3 text-sm font-medium text-white hover:text-black hover:bg-gray-200 focus:outline-none focus:ring active:bg-gray-400 sm:w-auto text-center"
-          href="/about"
-          smooth to="/#team"
-        >
-          Meet the Team
-        </HashLink>
-           <HashLink
-          class="block w-full rounded border border-gray-100 px-12 py-3 text-sm font-medium text-white hover:text-black hover:bg-gray-200 focus:outline-none focus:ring active:bg-gray-400 sm:w-auto text-center"
-          href="/about"
-          smooth to="/#contact"
-        >
-          Contact us
-        </HashLink>
     </div>
   </div>
 </section>
