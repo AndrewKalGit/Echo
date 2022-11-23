@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Services(props) {
     return (
-<section id="learn" class="bg-gradient-to-r from-black via-gray-900 to-black">
+<section id="learn">
   <div class="mx-auto max-w-screen-2xl px-4 py-4 sm:px-6 lg:px-8">
     <div
       class="lg:items-stretch"
@@ -19,13 +19,13 @@ function Services(props) {
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-4 lg:py-12 mb-32">
+      <div class="grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-4 lg:py-12">
         <div>
           <LazyLoadImage
             id="img1"
             alt="UX"
-            src="https://i.imgur.com/Q1A4Dko.jpg"
-            placeholderSrc='https://i.imgur.com/SI5paqA.jpg'
+            src="https://i.imgur.com/GOM2fZx.jpg"
+            placeholderSrc='https://i.imgur.com/MSFA8r0.jpg'
             class="aspect-square w-full rounded object-cover"
           />
 
@@ -77,6 +77,13 @@ function Services(props) {
       </div>
     </div>
   </div>
+  <div class="flex justify-center mb-24 mt-4 sm:mt-0">
+         <HashLink smooth to="/#team" class="text-white text-center">
+        <div class="border-white border-2 rounded-full h-12 w-12">
+          <span class="text-2xl">⌄</span>
+        </div>
+      </HashLink>
+      </div>
 </section>
     );
 }

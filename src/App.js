@@ -9,14 +9,14 @@ import CardContain from './CardContain';
 
 function App() {
   return (
-    <>
+    <div class="bg-gradient-to-r from-black via-gray-900 to-black">
     <BrowserRouter>
       <Banner/>
       <Services/>
       <CardContain/>
       <Contact/>
     </BrowserRouter>
-    </>
+    </div>
   );
 }
 

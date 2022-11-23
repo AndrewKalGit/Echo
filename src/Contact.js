@@ -1,23 +1,39 @@
-import React from 'react';
-import { HashLink } from 'react-router-hash-link';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-function Contact(props) {
+export const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_8tu8yej', 'template_9mcw1oi', form.current, 'pWK-1B7t6ZNPqH79e')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    window.location.reload(false);
+  };
+
     return (
 <section id="contact" class="bg-gray-100">
+  <h1 class="text-center h-16 pt-10 w-full text-4xl font-semibold text-blue-500"> Connect with us </h1>
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
       <div class="lg:col-span-2 lg:py-12">
-        <h1 class="-mt-9 text-center sm:text-left sm:mt-0 max-w-xl text-2xl mb-2 font-semibold text-blue-600"> Get in touch </h1>
+        <h1 class="-mt-9 text-center sm:text-left sm:mt-0 max-w-xl text-2xl mb-2 font-semibold text-blue-500"> Get in touch </h1>
         <p class="max-w-xl text-lg text-center sm:text-left">
           Think our service is a match? Get in touch and let's integrate the best digital solution for your organization.  
         </p>
 
         <div class="mt-8">
-          <a href="tel:+17325158724" class="text-2xl font-bold text-blue-600 hover:opacity-75">
+          <a href="tel:+17325158724" class="text-2xl font-bold text-blue-400 hover:opacity-75">
             (732) 515 8724
           </a>
         </div>
-          <a href="mailto:echowebllc@gmail.com" class="text-2xl font-bold text-blue-600 hover:opacity-75">
+          <a href="mailto:echowebllc@gmail.com" class="text-2xl font-bold text-blue-400 hover:opacity-75">
             echowebllc@gmail.com
           </a>
         <div class="flex mt-4">
@@ -30,7 +46,7 @@ function Contact(props) {
             <span class="sr-only"> Facebook </span>
 
             <svg
-              class="h-12 w-12 text-blue-600"
+              class="h-12 w-12 text-blue-500"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -52,7 +68,7 @@ function Contact(props) {
             <span class="sr-only"> Instagram </span>
 
             <svg
-              class="h-12 w-12 text-blue-600"
+              class="h-12 w-12 text-blue-500"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -68,7 +84,7 @@ function Contact(props) {
       </div>
 
       <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-        <form action="" class="space-y-4">
+        <form onSubmit={sendEmail} ref={form}  class="space-y-4">
           <div>
             <label class="sr-only" for="name">Name</label>
             <input
@@ -76,6 +92,7 @@ function Contact(props) {
               placeholder="Name"
               type="text"
               id="name"
+              name="from_name"
             />
           </div>
 
@@ -87,18 +104,20 @@ function Contact(props) {
                 placeholder="Email address"
                 type="email"
                 id="email"
+                name="reply_to_email"
               />
             </div>
 
             <div>
               <label class="sr-only" for="phone">Phone</label>
               <input
-                pattern="[0-9]{3}[0-9]{3}[0-9]{4}|[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}|[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
                 required
                 class="w-full rounded-lg border-gray-200 p-3 text-sm"
                 placeholder="Phone Number"
                 type="tel"
                 id="phone"
+                name="reply_to_number"
               />
             </div>
           </div>
@@ -114,13 +133,14 @@ function Contact(props) {
               placeholder="Message"
               rows="8"
               id="message"
+              name="message"
             ></textarea>
           </div>
 
           <div class="mt-4">
             <button
               type="submit"
-              class="inline-flex w-full items-center justify-center bg-blue-600 px-5 py-3 text-white sm:w-auto"
+              class="inline-flex w-full items-center justify-center bg-blue-400 rounded-md px-5 py-3 text-white sm:w-auto"
             >
               <span class="font-medium"> Connect </span>
               <svg

@@ -5,11 +5,11 @@ import Cards from './Cards';
 function CardContain(props) {
     return (
         <div>
-<h1 class="bg-gradient-to-r from-black via-gray-900 to-black text-2xl font-bold text-white text-center h-20">
+<h1 class="font-bold text-white text-center h-10 text-xl mb-8">
 Meet The Team 
 </h1>
-<section id="learn" class="bg-gradient-to-r from-black via-gray-900 to-black">
-      <div class="grid grid-cols-1 lg:col-span-2 lg:grid-cols-2 lg:py-12">
+<section id="learn" class="">
+      <div class="grid grid-cols-1 lg:col-span-2 lg:grid-cols-2">
         <Cards/>
         <CardJenny/>
       </div>
