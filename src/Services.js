@@ -4,12 +4,12 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Services(props) {
     return (
-<section id="learn" class="bg-gray-900">
+<section id="learn" class="bg-gradient-to-r from-black via-gray-900 to-black">
   <div class="mx-auto max-w-screen-2xl px-4 py-4 sm:px-6 lg:px-8">
     <div
       class="lg:items-stretch"
     >
-      <div class="flex items-center rounded bg-gray-900 p-8">
+      <div class="flex items-center rounded p-8">
         <div class="mx-auto text-center lg:text-left">
           <h2 class="text-2xl font-bold text-white text-center">Services</h2>
 
