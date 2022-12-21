@@ -13,13 +13,13 @@ function Cards(props) {
     placeholderSrc='https://i.imgur.com/IzPKXrm.jpg'
   />
   <div class="relative p-8">
-   <p class="text-sm font-extrabold uppercase tracking-widest text-blue-700 ml-4">
-    <span class="bg-gray-100 p-2">
+   <p class="text-sm font-extrabold uppercase tracking-widest text-purple-700 ml-4">
+    <span class="bg-gray-100 p-1">
     Proprietor & 
     Frontend Developer 
     </span>
     </p>
-    <p class="text-2xl font-bold text-white ml-4"><span class="bg-blue-400 p-1">Andrew Kal</span></p>
+    <p class="text-2xl font-bold text-white ml-4"><span class="bg-purple-400 p-1">Andrew Kal</span></p>
 
     <div class="mt-64">
       <div
